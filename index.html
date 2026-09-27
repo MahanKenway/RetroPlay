@@ -14,15 +14,32 @@
   <meta property="og:title" content="RetroPlay — Classic worlds, ready to play" />
   <meta property="og:description" content="A curated browser hub for ready-to-play open-source retro games, classic engines and WAD worlds." />
   <meta property="og:url" content="https://mahankenway.github.io/RetroPlay/" />
-  <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/freedoom-phase1.png" />
+  <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/og-retroplay.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="RetroPlay browser arcade with classic open-source game worlds" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="RetroPlay — Classic worlds, ready to play" />
   <meta name="twitter:description" content="Open-source retro games and classic engines, ready to play in your browser." />
-  <meta name="twitter:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/freedoom-phase1.png" />
+  <meta name="twitter:image" content="https://mahankenway.github.io/RetroPlay/assets/og-retroplay.png" />
+  <meta name="twitter:image:alt" content="RetroPlay browser arcade with classic open-source game worlds" />
   <title>RetroPlay — Classic worlds, ready to play</title>
   <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/apple-touch-icon.png" />
   <link rel="icon" href="assets/favicon.ico?v=gamecube-1" type="image/x-icon" />
-  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="preload" href="styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="styles/main.css" /></noscript>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RetroPlay",
+    "url": "https://mahankenway.github.io/RetroPlay/",
+    "description": "A curated browser hub for ready-to-play open-source retro games, classic engines and WAD worlds.",
+    "publisher": {"@type": "Person", "name": "Mahan Tavakoli", "url": "https://github.com/MahanKenway"},
+    "sameAs": ["https://github.com/MahanKenway/DOOM"]
+  }
+  </script>
 </head>
 <body>
 
@@ -57,7 +74,7 @@
         <div class="section-tag"><span>// 01</span><span>Featured world</span></div>
         <article class="featured-panel spatial-panel" aria-roledescription="carousel" aria-label="Featured RetroPlay games">
           <div class="featured-media">
-            <img id="featured-cover" src="assets/screenshots/hexgl-runtime.webp" alt="" />
+            <img id="featured-cover" src="assets/screenshots/hexgl-runtime.webp" alt="HexGL gameplay preview" />
             <canvas id="gradient-waves" class="gradient-waves" aria-hidden="true"></canvas>
             <span class="waves-fallback" aria-hidden="true"></span>
             <div class="media-grid" aria-hidden="true"></div>
@@ -153,7 +170,7 @@
 <dialog id="game-detail-dialog" class="game-detail-dialog" aria-labelledby="detail-title" aria-describedby="detail-description">
   <article class="game-detail-shell">
     <button class="game-detail-close" type="button" data-action="close-detail" aria-label="Close game details">×</button>
-    <div class="game-detail-media"><img id="detail-cover" src="" alt="" /><span id="detail-state" class="detail-state"></span><span id="detail-index" class="detail-index"></span></div>
+    <div class="game-detail-media"><img id="detail-cover" src="assets/screenshots/hexgl-runtime.webp" alt="Selected game gameplay screenshot" /><span id="detail-state" class="detail-state"></span><span id="detail-index" class="detail-index"></span></div>
     <div class="game-detail-copy">
       <p id="detail-overline" class="detail-overline"></p>
       <h2 id="detail-title">Game title</h2>
@@ -161,7 +178,7 @@
       <p id="detail-description" class="detail-description"></p>
       <dl class="detail-specs"><div><dt>Format</dt><dd id="detail-format"></dd></div><div><dt>Session</dt><dd id="detail-duration"></dd></div><div><dt>World</dt><dd id="detail-maps"></dd></div><div><dt>License</dt><dd id="detail-license"></dd></div></dl>
       <p id="detail-credit" class="detail-credit"></p>
-      <div id="detail-links" class="detail-links"><a id="detail-project-link" target="_blank" rel="noopener noreferrer" hidden></a><a id="detail-download-link" target="_blank" rel="noopener noreferrer" hidden></a><p id="detail-download-note" class="detail-download-note" hidden></p></div>
+      <div id="detail-links" class="detail-links"><a id="detail-project-link" href="./" target="_blank" rel="noopener noreferrer" hidden aria-hidden="true"></a><a id="detail-download-link" href="./" target="_blank" rel="noopener noreferrer" hidden aria-hidden="true"></a><p id="detail-download-note" class="detail-download-note" hidden></p></div>
       <div class="detail-actions"><button id="detail-primary" class="retro-button retro-button-primary" data-magnet type="button"></button><button id="detail-library" class="retro-button retro-button-quiet" type="button"></button></div>
       <p class="detail-note">RetroPlay launches only packaged local runtimes and clearly marked legal data paths. No account is required.</p>
     </div>

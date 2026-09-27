@@ -840,7 +840,7 @@ export class CatalogController {
     root.tabIndex = 0;
     root.setAttribute('role', 'group');
     root.setAttribute('aria-label', 'Featured games depth deck. Drag or use left and right arrow keys to browse.');
-    root.innerHTML = `<div class="depth-deck-stage">${games.map((game, index) => `<button class="depth-deck-card" data-depth-index="${index}" aria-label="Show ${game.title}"><img src="${game.artwork}" alt="" draggable="false" /><span>${String(index + 1).padStart(2, '0')}</span></button>`).join('')}</div><span class="depth-deck-hint" aria-hidden="true">DRAG / DEPTH</span>`;
+    root.innerHTML = `<div class="depth-deck-stage">${games.map((game, index) => `<button class="depth-deck-card" data-depth-index="${index}" aria-label="Show ${game.title}"><img src="${game.artwork}" alt="${game.title} gameplay preview" draggable="false" /><span>${String(index + 1).padStart(2, '0')}</span></button>`).join('')}</div><span class="depth-deck-hint" aria-hidden="true">DRAG / DEPTH</span>`;
     media.append(root);
     this.#depthDeck = root;
     const setFocus = (raw, animate = true) => {
@@ -1192,7 +1192,7 @@ export class CatalogController {
     const downloadNote = game.downloadNote ? `<p class="card-download-note">${game.downloadNote}</p>` : '';
     return `<article class="game-card ${game.featured ? 'is-featured-card' : ''}" style="--card-index:${index}">
       <button class="game-card-media" data-action="select-game" data-game="${game.id}" aria-label="View ${game.title}">
-        <img src="${game.artwork}" alt="" loading="lazy" />
+        <img src="${game.artwork}" alt="${game.title} gameplay screenshot" loading="lazy" />
         <span class="card-index">// ${String(index + 1).padStart(2, '0')}</span>
         <span class="card-state ${game.playable ? 'is-ready' : ''}">${state}</span>
       </button>
