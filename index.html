@@ -7,9 +7,11 @@
   <script>(function(){try{var t=localStorage.getItem('retroplay:theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t;document.querySelector('meta[name="theme-color"]').setAttribute('content',t==='dark'?'#10140f':'#e7e6e0')}catch(e){document.documentElement.dataset.theme='light'}})();</script>
   <meta name="application-name" content="RetroPlay" />
   <meta name="description" content="RetroPlay is a curated browser hub for ready-to-play open-source retro games, classic engines and WAD worlds." />
+  <meta name="author" content="Mahan Tavakoli" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://mahankenway.github.io/RetroPlay/" />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
   <meta property="og:site_name" content="RetroPlay" />
   <meta property="og:title" content="RetroPlay — Classic worlds, ready to play" />
   <meta property="og:description" content="A curated browser hub for ready-to-play open-source retro games, classic engines and WAD worlds." />
@@ -25,10 +27,31 @@
   <meta name="twitter:image:alt" content="RetroPlay browser arcade with classic open-source game worlds" />
   <title>RetroPlay — Classic worlds, ready to play</title>
   <link rel="manifest" href="manifest.json" />
+  <link rel="alternate" type="text/plain" href="llms.txt" title="RetroPlay machine-readable site guide" />
   <link rel="apple-touch-icon" sizes="192x192" href="assets/apple-touch-icon.png" />
   <link rel="icon" href="assets/favicon.ico?v=gamecube-1" type="image/x-icon" />
+  <link rel="preload" href="assets/screenshots/hexgl-runtime.webp" as="image" fetchpriority="high" />
   <link rel="preload" href="styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="styles/main.css" /></noscript>
+  <style>
+    html, body { width:100%; min-height:100%; margin:0; }
+    body { overflow:hidden; background:#e7e6e0; color:#161815; }
+    img { display:block; }
+    .screen { position:fixed; inset:0; opacity:0; visibility:hidden; pointer-events:none; }
+    .screen.active { opacity:1; visibility:visible; pointer-events:auto; }
+    #loading-screen { z-index:100; display:grid; place-items:center; overflow:hidden; background:#171a17; color:#e7e6e0; }
+    #wad-picker { z-index:10; overflow-x:hidden; overflow-y:auto; background:#e7e6e0; }
+    .retro-shell { width:min(1480px,calc(100% - 48px)); min-height:100vh; margin:0 auto; padding:22px 0 20px; }
+    .featured-panel { min-height:480px; }
+    .featured-media { min-height:360px; position:relative; overflow:hidden; background:#121412; }
+    .featured-media img { width:100%; height:100%; object-fit:cover; }
+    .catalog-grid { min-height:720px; }
+    @media (max-width:760px) {
+      .retro-shell { width:min(100% - 28px,560px); padding-top:14px; }
+      .featured-panel { min-height:0; }
+      .featured-media { min-height:250px; }
+      .catalog-grid { min-height:440px; }
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -74,7 +97,7 @@
         <div class="section-tag"><span>// 01</span><span>Featured world</span></div>
         <article class="featured-panel spatial-panel" aria-roledescription="carousel" aria-label="Featured RetroPlay games">
           <div class="featured-media">
-            <img id="featured-cover" src="assets/screenshots/hexgl-runtime.webp" alt="HexGL gameplay preview" />
+            <img id="featured-cover" src="assets/screenshots/hexgl-runtime.webp" width="1600" height="900" fetchpriority="high" decoding="async" alt="HexGL gameplay preview" />
             <canvas id="gradient-waves" class="gradient-waves" aria-hidden="true"></canvas>
             <span class="waves-fallback" aria-hidden="true"></span>
             <div class="media-grid" aria-hidden="true"></div>
@@ -170,7 +193,7 @@
 <dialog id="game-detail-dialog" class="game-detail-dialog" aria-labelledby="detail-title" aria-describedby="detail-description">
   <article class="game-detail-shell">
     <button class="game-detail-close" type="button" data-action="close-detail" aria-label="Close game details">×</button>
-    <div class="game-detail-media"><img id="detail-cover" src="assets/screenshots/hexgl-runtime.webp" alt="Selected game gameplay screenshot" /><span id="detail-state" class="detail-state"></span><span id="detail-index" class="detail-index"></span></div>
+    <div class="game-detail-media"><img id="detail-cover" src="assets/screenshots/hexgl-runtime.webp" width="1600" height="900" loading="lazy" decoding="async" alt="Selected game gameplay screenshot" /><span id="detail-state" class="detail-state"></span><span id="detail-index" class="detail-index"></span></div>
     <div class="game-detail-copy">
       <p id="detail-overline" class="detail-overline"></p>
       <h2 id="detail-title">Game title</h2>

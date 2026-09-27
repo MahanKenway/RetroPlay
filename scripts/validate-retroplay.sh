@@ -12,6 +12,13 @@ node --check src/main.js
 
 git diff --check
 
+test -f llms.txt
+grep -q 'rel="preload" href="styles/main.css" as="style"' index.html
+! grep -q 'rel="stylesheet"' index.html
+grep -q 'width="1600" height="900"' index.html
+grep -q 'width="1600" height="900"' src/catalog.js
+grep -q 'min-height:720px' index.html
+
 test -f assets/audio/retroplay-theme-nene.ogg
 test -f assets/audio/retroplay-theme-nene.mp3
 test -f assets/audio/ATTRIBUTION.md

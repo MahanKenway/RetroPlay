@@ -1,0 +1,29 @@
+# RetroPlay
+
+> RetroPlay is an independent browser hub for legally distributable open-source retro games, classic engines, WAD worlds, and experimental runtimes.
+
+## What this site offers
+
+- Ready-to-play local browser runtimes for classic games across action, horror, exploration, strategy, racing, puzzle, rhythm, and fantasy genres.
+- A curated catalog with game descriptions, screenshots, license notes, official project links, and download information.
+- PSP-style touch controls, keyboard input, gamepad support, fullscreen play, local saves, theme preferences, and opt-in retro audio.
+- A separate local WAD importer for users who own compatible game data.
+
+## Important URLs
+
+- [RetroPlay home](https://mahankenway.github.io/RetroPlay/)
+- [Game sitemap](https://mahankenway.github.io/RetroPlay/sitemap.xml)
+- [Crawler policy](https://mahankenway.github.io/RetroPlay/robots.txt)
+- [About the creator](https://mahankenway.github.io/RetroPlay/#about)
+- [Source repository](https://github.com/MahanKenway/RetroPlay)
+
+## Content and rights
+
+RetroPlay distinguishes bundled libre/open-source content from local-file imports and external projects. Each catalog entry retains upstream attribution and license information. Commercial copyrighted game data is not presented as bundled free content.
+
+## Entity
+
+- Creator: Mahan Tavakoli (MahanKenway)
+- Project: RetroPlay
+- Primary language: English
+- Platform: Web browser, desktop and mobile
