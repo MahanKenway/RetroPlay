@@ -42,6 +42,8 @@
     @media (max-width:760px) and (orientation:landscape) { .play-area:fullscreen canvas { max-height:calc(100vh - 168px); } }
     @media (min-width:761px) { .play-area:fullscreen .controls { display:none; } .play-area:fullscreen canvas { width:100vw; height:100vh; max-height:none; aspect-ratio:auto; } }
   </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "Neverball", "url": "https://mahankenway.github.io/RetroPlay/neverball.html", "description": "A complete 3D physics-puzzle game in its own Neverball WebAssembly runtime. It bundles the libre base game and Easy level set, keeps saves in the browser, includes PSP-style touch controls and never asks the player to upload data or download a campaign.", "genre": "Experimental", "applicationCategory": "Game"}
+  </script>
 </head>
 <body>
   <main>
@@ -57,7 +59,7 @@
           <div class="control-cluster"><span class="control-label">Camera / menu</span><div class="actions"><button class="pad-btn" data-key="KeyS" aria-label="Orbit camera left">L</button><button class="pad-btn" data-key="Digit1" aria-label="Camera one">△</button><button class="pad-btn" data-key="KeyD" aria-label="Orbit camera right">R</button><button class="pad-btn" data-key="KeyE" aria-label="Toggle camera">□</button><button class="pad-btn" data-key="Digit2" aria-label="Camera two">○</button><button class="pad-btn" data-key="Enter" aria-label="Select or confirm">×</button><button class="pad-btn pad-btn--menu" data-key="Escape" aria-label="Open menu or go back">MENU</button><button class="pad-btn pad-btn--restart" data-key="KeyR" aria-label="Restart level">↻</button></div></div>
         </div>
       </div>
-      <div class="result"><span>Runtime status</span><output id="result" class="status">Loading Neverball runtime…</output><dl class="facts"><div><dt>Runtime</dt><dd>Emscripten / WebGL</dd></div><div><dt>Content</dt><dd>Bundled base + Easy + Medium sets</dd></div><div><dt>Session</dt><dd>Browser IndexedDB saves</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
+      <div class="result"><span>Runtime status</span><output id="result" data-agent-status="true" class="status">Loading Neverball runtime…</output><dl class="facts"><div><dt>Runtime</dt><dd>Emscripten / WebGL</dd></div><div><dt>Content</dt><dd>Bundled base + Easy + Medium sets</dd></div><div><dt>Session</dt><dd>Browser IndexedDB saves</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
     </section>
     <p class="notice"><strong>Fully bundled libre game:</strong> Neverball and its included base data are free software. RetroPlay packages the official base content plus the Easy and Medium level sets from a pinned source revision, uses browser-local storage for saves, and intentionally removes replay/add-on uploads and external campaign downloads. <a href="neverball/NEVERBALL-LICENSE.md">License</a> · <a href="neverball/SOURCE-NOTICE.txt">Source and attribution</a>.</p>
   </main>
@@ -230,5 +232,6 @@
     window.addEventListener('error', (event) => { if (/neverball|wasm|webgl|runtime/i.test(String(event.message))) setStatus(`NOT READY\n${event.message}`); });
   </script>
   <script src="neverball/neverball.js?v=20260815-neverball-retroplay-v3-mobile-controls" onload="startNeverball()" onerror="setStatus('NOT READY\\nThe Neverball engine file could not load.')"></script>
+<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

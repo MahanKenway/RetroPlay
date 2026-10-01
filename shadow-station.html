@@ -33,6 +33,8 @@
     @media (max-width:540px) { main { width:100%; padding-top:0; }.panel { gap:0; padding:0; border:0; box-shadow:none; }.controls { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); grid-template-areas:'move action' 'note note'; justify-items:center; gap:7px 8px; padding:9px max(8px,env(safe-area-inset-right)) max(10px,env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left)); }.control-cluster { min-width:0; }.control-cluster:first-child { grid-area:move; }.control-cluster:last-child { grid-area:action; }.touch-note { grid-area:note; max-width:none; font-size:9px; }.dpad { grid-template-columns:repeat(3,44px); grid-template-rows:repeat(3,44px); }.actions { grid-template-columns:repeat(3,44px); grid-template-rows:repeat(3,44px); }.runtime-pad { width:44px; height:44px; font-size:12px; }.runtime-pad--menu { width:95px; font-size:9px; }.runtime-pad--restart { font-size:12px; }.control-label { font-size:8px; }.touch-note strong { font-size:10px; } }
     @media (min-width:761px) { .runtime-play-area:fullscreen .controls { display:none; }.runtime-play-area:fullscreen .runtime-frame { width:100vw; height:100vh; max-height:none; aspect-ratio:auto; } }
   </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "Obsidian Relay", "url": "https://mahankenway.github.io/RetroPlay/shadow-station.html", "description": "An original 3D survival-exploration game built through RetroPlay’s OpenResident WebGL2/WebAssembly renderer path. Recover two signal cells, restore a stranded deep-sea relay and reach the emergency bulkhead while hostile echoes pursue you—fully bundled with keyboard, PSP-style touch controls, gamepad support and fullscreen.", "genre": "Survival", "applicationCategory": "Game"}
+  </script>
 </head>
 <body>
   <main>
@@ -48,10 +50,11 @@
           <div class="control-cluster"><span class="control-label">Action</span><div class="actions"><button class="runtime-pad" data-key="Space" aria-label="Interact">×</button><button class="runtime-pad" data-tap-key="Enter" aria-label="Confirm">○</button><button class="runtime-pad" data-runtime-fullscreen aria-label="Toggle fullscreen">□</button><button class="runtime-pad runtime-pad--menu" data-runtime-focus aria-label="Focus game">FOCUS</button><button class="runtime-pad runtime-pad--restart" data-runtime-restart aria-label="Restart Obsidian Relay">↻</button></div></div>
         </div>
       </div>
-      <div class="result"><span>Runtime status</span><output class="runtime-status">Starting Obsidian Relay…</output><dl class="facts"><div><dt>Runtime</dt><dd>OpenResident renderer path / WebAssembly</dd></div><div><dt>Content</dt><dd>Original relay-station survival slice</dd></div><div><dt>Objective</dt><dd>Recover cells · restore relay · exit</dd></div><div><dt>Input</dt><dd>Keyboard / PSP touch / gamepad</dd></div><div><dt>Distribution</dt><dd>RetroPlay original · non-commercial</dd></div></dl><button class="utility" type="button" data-runtime-fullscreen>Fullscreen</button></div>
+      <div class="result"><span>Runtime status</span><output class="runtime-status" data-agent-status="true">Starting Obsidian Relay…</output><dl class="facts"><div><dt>Runtime</dt><dd>OpenResident renderer path / WebAssembly</dd></div><div><dt>Content</dt><dd>Original relay-station survival slice</dd></div><div><dt>Objective</dt><dd>Recover cells · restore relay · exit</dd></div><div><dt>Input</dt><dd>Keyboard / PSP touch / gamepad</dd></div><div><dt>Distribution</dt><dd>RetroPlay original · non-commercial</dd></div></dl><button class="utility" type="button" data-runtime-fullscreen>Fullscreen</button></div>
     </section>
     <p class="notice"><strong>Original runtime and assets:</strong> Obsidian Relay uses original gameplay code and procedural station geometry. It is delivered through RetroPlay’s browser-focused OpenResident WebGL2/WebAssembly adapter path, but contains no Resident Evil disc data, characters, rooms, story, assets or filenames. The user-provided disc image was inspected only as archive metadata and is not part of this game.</p>
   </main>
   <script src="src/runtime-shell.js"></script>
+<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

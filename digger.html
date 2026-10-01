@@ -12,6 +12,24 @@
   <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/digger-runtime.webp" />
   <title>RetroPlay — Digger Remastered</title>
   <link rel="stylesheet" href="styles/runtime-shell.css" />
+
+  <meta name="application-name" content="RetroPlay" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://mahankenway.github.io/RetroPlay/digger.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RetroPlay" />
+  <meta property="og:title" content="RetroPlay — Digger Remastered" />
+  <meta property="og:description" content="A fully local SDL2/WebAssembly build of the remastered 1983 digging-action classic. Collect emeralds, manage falling gold bags and escape Hobbins with keyboard, gamepad or PSP-style touch co" />
+  <meta property="og:url" content="https://mahankenway.github.io/RetroPlay/digger.html" />
+  <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/digger-runtime.webp" />
+  <meta property="og:image:alt" content="Digger Remastered gameplay screenshot" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RetroPlay — Digger Remastered" />
+  <meta name="twitter:description" content="A fully local SDL2/WebAssembly build of the remastered 1983 digging-action classic. Collect emeralds, manage falling gold bags and escape Hobbins with keyboard, gamepad or PSP-style touch co" />
+  <meta name="twitter:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/digger-runtime.webp" />
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "Digger Remastered", "url": "https://mahankenway.github.io/RetroPlay/digger.html", "description": "A fully local SDL2/WebAssembly build of the remastered 1983 digging-action classic. Collect emeralds, manage falling gold bags and escape Hobbins with keyboard, gamepad or PSP-style touch controls—without an upload or external game service.", "genre": "Action", "applicationCategory": "Game"}
+  </script>
 </head>
 <body>
   <main class="runtime-main" data-retro-runtime data-runtime-title="Digger Remastered">
@@ -27,10 +45,11 @@
           <div class="runtime-control-cluster"><span class="runtime-control-label">Action</span><div class="runtime-actions"><button class="runtime-pad runtime-pad--action" data-tap-key="F1" data-gamepad-primary="F1" aria-label="Fire or start">✦</button><button class="runtime-pad" data-tap-key="Space" aria-label="Pause or resume">Ⅱ</button><button class="runtime-pad" data-runtime-fullscreen aria-label="Toggle fullscreen">□</button><button class="runtime-pad runtime-pad--wide" data-runtime-restart aria-label="Restart Digger">RESTART</button></div></div>
         </div>
       </div>
-      <div class="runtime-result"><span class="runtime-kicker">Runtime status</span><output class="runtime-status">Starting Digger Remastered…</output><dl class="runtime-facts"><div><dt>Runtime</dt><dd>SDL2 / WebAssembly</dd></div><div><dt>Content</dt><dd>Upstream Remastered game logic</dd></div><div><dt>Session</dt><dd>Browser-local runtime</dd></div><div><dt>Input</dt><dd>Keyboard / PSP touch / gamepad</dd></div><div><dt>Distribution</dt><dd>Upstream mixed notices retained</dd></div></dl><button class="runtime-button" type="button" data-runtime-fullscreen>Fullscreen</button></div>
+      <div class="runtime-result"><span class="runtime-kicker">Runtime status</span><output class="runtime-status" data-agent-status="true">Starting Digger Remastered…</output><dl class="runtime-facts"><div><dt>Runtime</dt><dd>SDL2 / WebAssembly</dd></div><div><dt>Content</dt><dd>Upstream Remastered game logic</dd></div><div><dt>Session</dt><dd>Browser-local runtime</dd></div><div><dt>Input</dt><dd>Keyboard / PSP touch / gamepad</dd></div><div><dt>Distribution</dt><dd>Upstream mixed notices retained</dd></div></dl><button class="runtime-button" type="button" data-runtime-fullscreen>Fullscreen</button></div>
     </section>
     <p class="runtime-notice"><strong>Fully bundled classic action runtime:</strong> Digger uses the upstream project’s own `ARCH=WASM` target. Its source contains several historical license notices, all preserved with this package. <a href="digger/DIGGER-UPSTREAM-NOTICES.txt">Upstream notices</a> · <a href="digger/SOURCE-NOTICE.txt">Source notice</a>.</p>
   </main>
   <script src="src/runtime-shell.js"></script>
+<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

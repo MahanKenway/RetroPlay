@@ -1,29 +1,65 @@
 # RetroPlay
 
-> RetroPlay is an independent browser hub for legally distributable open-source retro games, classic engines, WAD worlds, and experimental runtimes.
+> RetroPlay — Classic worlds, ready to play. An independent browser hub by Mahan Tavakoli (MahanKenway) for open-source, free-content classic games and experimental browser runtimes.
 
-## What this site offers
-
-- Ready-to-play local browser runtimes for classic games across action, horror, exploration, strategy, racing, puzzle, rhythm, and fantasy genres.
-- A curated catalog with game descriptions, screenshots, license notes, official project links, and download information.
-- PSP-style touch controls, keyboard input, gamepad support, fullscreen play, local saves, theme preferences, and opt-in retro audio.
-- A separate local WAD importer for users who own compatible game data.
-
-## Important URLs
-
-- [RetroPlay home](https://mahankenway.github.io/RetroPlay/)
-- [Game sitemap](https://mahankenway.github.io/RetroPlay/sitemap.xml)
-- [Crawler policy](https://mahankenway.github.io/RetroPlay/robots.txt)
-- [About the creator](https://mahankenway.github.io/RetroPlay/#about)
-- [Source repository](https://github.com/MahanKenway/RetroPlay)
-
-## Content and rights
-
-RetroPlay distinguishes bundled libre/open-source content from local-file imports and external projects. Each catalog entry retains upstream attribution and license information. Commercial copyrighted game data is not presented as bundled free content.
-
-## Entity
-
-- Creator: Mahan Tavakoli (MahanKenway)
-- Project: RetroPlay
+## Identity
+- Creator: Mahan Tavakoli (MahanKenway) — https://github.com/MahanKenway
+- Official site: https://mahankenway.github.io/RetroPlay/
+- Repository: https://github.com/MahanKenway/RetroPlay
 - Primary language: English
-- Platform: Web browser, desktop and mobile
+- Type: static browser-game hub
+
+## Machine-readable discovery
+- Catalog JSON: https://mahankenway.github.io/RetroPlay/data/games.json
+- Agent manifest: https://mahankenway.github.io/RetroPlay/agent-manifest.json
+- Agent guide: https://mahankenway.github.io/RetroPlay/agent/
+- Sitemap: https://mahankenway.github.io/RetroPlay/sitemap.xml
+- Robots policy: https://mahankenway.github.io/RetroPlay/robots.txt
+- Privacy: https://mahankenway.github.io/RetroPlay/privacy/
+
+## What RetroPlay offers
+- Direct browser runtimes for action, adventure, strategy, racing, puzzle, rhythm, horror, survival and experimental games.
+- A semantic catalog with direct links, descriptions, genre, runtime type, status, controls and license context.
+- Keyboard, touch, gamepad and fullscreen support where the runtime supports them.
+- Local saves, local library pins, theme preferences and opt-in retro audio.
+- A separate local WAD importer for compatible files owned by the player; WAD files are not uploaded to RetroPlay.
+
+## Catalog index
+- Blasphemer — https://mahankenway.github.io/RetroPlay/blasphemer.html — genre: Fantasy shooter; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- C-Dogs SDL — https://mahankenway.github.io/RetroPlay/cdogs.html — genre: Action; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- GNU FreeDink — https://mahankenway.github.io/RetroPlay/freedink.html — genre: Exploration; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- OpenTyrian2000 — https://mahankenway.github.io/RetroPlay/opentyrian.html — genre: Action; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- LibreQuake — https://mahankenway.github.io/RetroPlay/librequake.html — genre: Action; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- OpenTTD — https://mahankenway.github.io/RetroPlay/openttd.html — genre: Strategy; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- FreeRCT — https://mahankenway.github.io/RetroPlay/freerct.html — genre: Strategy; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- Neverball — https://mahankenway.github.io/RetroPlay/neverball.html — genre: Experimental; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- Armawebtron — https://mahankenway.github.io/RetroPlay/armawebtron.html — genre: Arcade; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- TuxRacer.js — https://mahankenway.github.io/RetroPlay/tuxracer.html — genre: Racing; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- Starter Kit Racing — https://mahankenway.github.io/RetroPlay/starter-kit-racing.html — genre: 3D Racing; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- Astray — https://mahankenway.github.io/RetroPlay/astray.html — genre: Physics Maze; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- Neon Rift — https://mahankenway.github.io/RetroPlay/neon-rift.html — genre: Racing; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- Obsidian Relay — https://mahankenway.github.io/RetroPlay/shadow-station.html — genre: Survival; status: Free / bundled; runtime: Bundled OpenResident WebGL2/WASM runtime; playable: true
+- HexGL — https://mahankenway.github.io/RetroPlay/hexgl.html — genre: Racing; status: Free / bundled · non-commercial package; runtime: Bundled independent runtime; playable: true
+- Hextris — https://mahankenway.github.io/RetroPlay/hextris.html — genre: Arcade Puzzle; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- Rocks'n'Diamonds — https://mahankenway.github.io/RetroPlay/rocksndiamonds.html — genre: Rock & Gem Action Puzzle; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- Beats into Shapes — https://mahankenway.github.io/RetroPlay/beats-into-shapes.html — genre: Rhythm; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- 2048 — https://mahankenway.github.io/RetroPlay/2048.html — genre: Arcade Puzzle; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- JavaScript Tetris — https://mahankenway.github.io/RetroPlay/javascript-tetris.html — genre: Arcade Puzzle; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- A Dark Room — https://mahankenway.github.io/RetroPlay/adarkroom.html — genre: Exploration; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- Digger Remastered — https://mahankenway.github.io/RetroPlay/digger.html — genre: Action; status: Free / bundled; runtime: Bundled independent runtime; playable: true
+- Ancient Aliens — https://www.moddb.com/games/doom-ii/addons/ancient-aliens — genre: Action; status: External engine required; runtime: Doom II PWAD · Boom; playable: false
+- Eviternity — https://www.moddb.com/mods/eviternity — genre: Exploration; status: External engine required; runtime: Doom II PWAD · Boom; playable: false
+- Back to Saturn X: E1 — https://www.moddb.com/mods/back-to-saturn-x — genre: Exploration; status: Download project WADs locally; runtime: Doom II PWAD pair; playable: false
+- The Adventures of Square — http://adventuresofsquare.com/ — genre: Experimental; status: External engine required; runtime: Standalone GZDoom total conversion; playable: false
+- ECWolf — https://mahankenway.github.io/RetroPlay/ecwolf.html — genre: Action; status: Engine bundled / data local; runtime: Local-data independent runtime; playable: true
+- OpenResident — https://mahankenway.github.io/RetroPlay/openresident.html — genre: Horror; status: WebAssembly study · not playable; runtime: Resident Evil engine; playable: false
+- SuperTuxKart — https://supertuxkart.net/Download — genre: Racing; status: Free full game / download required; runtime: Full-game desktop download; playable: false
+
+## Important terminology
+- Ready / bundled: the browser package includes the lawful free content needed to start.
+- Local-data runtime: RetroPlay ships the engine but the player selects compatible lawful data locally.
+- External project: RetroPlay links to the official project or download and does not repackage that game.
+- OpenResident: intentionally a non-playable technical WebGL2/WASM study; no Resident Evil game data is bundled.
+
+## Rights
+RetroPlay keeps upstream attribution and license notices with each runtime. It does not present commercial game data as bundled free content and does not create fake external profiles or citations.

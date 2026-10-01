@@ -37,6 +37,8 @@
   <meta property="og:url" content="https://mahankenway.github.io/RetroPlay/cdogs.html" />
   <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/cdogs-sdl-browser.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "C-Dogs SDL", "url": "https://mahankenway.github.io/RetroPlay/cdogs.html", "description": "A top-down retro action game running in its own C-Dogs SDL WebAssembly module. It includes the libre upstream campaign and dogfight data, has PSP-style mobile controls and never shares Doom’s WAD loader or game loop.", "genre": "Action", "applicationCategory": "Game"}
+  </script>
 </head>
 <body>
   <main>
@@ -46,7 +48,7 @@
     <p class="intro">A separate top-down action runtime for the libre C-Dogs SDL game. It has its own WebAssembly module, SDL input surface and local save filesystem; it does not share the Doom game loop or WAD loader.</p>
     <section class="panel" aria-label="C-Dogs SDL runtime">
       <div class="screen"><canvas id="canvas" width="960" height="720" tabindex="0" aria-label="C-Dogs SDL game canvas"></canvas></div>
-      <div class="result"><span>Runtime status</span><output id="result" class="status">Preparing C-Dogs SDL assets…</output><dl class="facts"><div><dt>Runtime</dt><dd>SDL2 / WebAssembly</dd></div><div><dt>Content</dt><dd>Free C-Dogs SDL data</dd></div><div><dt>Session</dt><dd>Local browser storage</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad*</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
+      <div class="result"><span>Runtime status</span><output id="result" data-agent-status="true" class="status">Preparing C-Dogs SDL assets…</output><dl class="facts"><div><dt>Runtime</dt><dd>SDL2 / WebAssembly</dd></div><div><dt>Content</dt><dd>Free C-Dogs SDL data</dd></div><div><dt>Session</dt><dd>Local browser storage</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad*</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
     </section>
     <div class="controls" aria-label="Touch controls">
       <div class="dpad"><button class="pad-btn" data-key="ArrowUp">▲</button><button class="pad-btn" data-key="ArrowLeft">◀</button><button class="pad-btn" data-key="ArrowDown">▼</button><button class="pad-btn" data-key="ArrowRight">▶</button></div>
@@ -95,5 +97,6 @@
     };
   </script>
   <script src="cdogs/cdogs-sdl.js?v=20260814-cdogs-campaign-verified" async></script>
+<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

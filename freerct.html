@@ -38,6 +38,8 @@
   <meta property="og:url" content="https://mahankenway.github.io/RetroPlay/freerct.html" />
   <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/freerct-runtime.webp" />
   <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "FreeRCT", "url": "https://mahankenway.github.io/RetroPlay/freerct.html", "description": "A complete clean-room theme-park strategy game in its own FreeRCT WebAssembly runtime. It bundles its own libre graphics, rides, scenery and scenarios, keeps saves in the browser and offers PSP-style touch controls without asking players to upload RollerCoaster Tycoon or OpenRCT2 files.", "genre": "Strategy", "applicationCategory": "Game"}
+  </script>
 </head>
 <body>
   <main>
@@ -47,7 +49,7 @@
     <p class="intro">Create and manage an amusement park in a complete libre strategy game. Its clean-room graphics, rides, scenery and data are bundled here, so a new park begins with no account, original-game search or player file upload.</p>
     <section class="panel" aria-label="FreeRCT runtime">
       <div class="screen"><canvas id="canvas" width="1280" height="960" tabindex="0" aria-label="FreeRCT game canvas"></canvas></div>
-      <div class="result"><span>Runtime status</span><output id="result" class="status">Preparing FreeRCT…</output><dl class="facts"><div><dt>Runtime</dt><dd>FreeRCT / WebGL / WebAssembly</dd></div><div><dt>Content</dt><dd>FreeRCT clean-room game data</dd></div><div><dt>Session</dt><dd>Local browser saves</dd></div><div><dt>Input</dt><dd>Touch / keyboard / mouse</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
+      <div class="result"><span>Runtime status</span><output id="result" data-agent-status="true" class="status">Preparing FreeRCT…</output><dl class="facts"><div><dt>Runtime</dt><dd>FreeRCT / WebGL / WebAssembly</dd></div><div><dt>Content</dt><dd>FreeRCT clean-room game data</dd></div><div><dt>Session</dt><dd>Local browser saves</dd></div><div><dt>Input</dt><dd>Touch / keyboard / mouse</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
     </section>
     <div class="controls" aria-label="Touch controls">
       <div class="dpad"><button class="pad-btn" data-key="ArrowUp">▲</button><button class="pad-btn" data-key="ArrowLeft">◀</button><button class="pad-btn" data-key="ArrowDown">▼</button><button class="pad-btn" data-key="ArrowRight">▶</button></div>
@@ -110,5 +112,6 @@
     window.addEventListener('error', (event) => { if (/freerct|wasm|WebGL|RuntimeError/i.test(String(event.message))) setStatus(`NOT READY\n${event.message}`); });
   </script>
   <script src="freerct/freerct.js?v=20260815-freerct-retroplay-runtime-v1"></script>
+<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

@@ -32,6 +32,8 @@
   <meta property="og:url" content="https://mahankenway.github.io/RetroPlay/ecwolf.html" />
   <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/ecwolf-runtime.png" />
   <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "ECWolf", "url": "https://mahankenway.github.io/RetroPlay/ecwolf.html", "description": "A Wolfenstein-compatible ECWolf WebAssembly engine with PSP-style controls, browser-local storage and stable fullscreen. RetroPlay ships only the engine resources: select a complete lawful compatible game-data set locally to launch it, with no original game files uploaded or bundled.", "genre": "Action", "applicationCategory": "Game"}
+  </script>
 </head>
 <body>
   <main>
@@ -41,7 +43,7 @@
     <p class="intro">A Wolfenstein-compatible browser engine built with ECWolf WebAssembly. The engine is ready here; select your own lawfully obtained compatible data files locally to launch a game. No original Wolfenstein data is bundled, uploaded or transmitted by RetroPlay.</p>
     <section class="panel" aria-label="ECWolf runtime">
       <div id="screen" class="screen"><canvas id="canvas" width="640" height="480" tabindex="0" aria-label="ECWolf game canvas"></canvas><div id="standby" class="standby"><strong>ECWolf ready</strong><span>Import local data to launch</span></div></div>
-      <div class="result"><span>Runtime status</span><output id="result" class="status">Loading ECWolf engine…</output><dl class="facts"><div><dt>Runtime</dt><dd>ECWolf / WebAssembly</dd></div><div><dt>Content</dt><dd>Player-provided lawful data</dd></div><div><dt>Session</dt><dd>Browser-local storage</dd></div><div><dt>Input</dt><dd>Keyboard / touch / mouse-look</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
+      <div class="result"><span>Runtime status</span><output id="result" data-agent-status="true" class="status">Loading ECWolf engine…</output><dl class="facts"><div><dt>Runtime</dt><dd>ECWolf / WebAssembly</dd></div><div><dt>Content</dt><dd>Player-provided lawful data</dd></div><div><dt>Session</dt><dd>Browser-local storage</dd></div><div><dt>Input</dt><dd>Keyboard / touch / mouse-look</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
     </section>
     <section class="importer" aria-label="Local game-data importer">
       <h2>Import local game data</h2>
@@ -120,5 +122,6 @@
       }
     });
   </script>
+<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

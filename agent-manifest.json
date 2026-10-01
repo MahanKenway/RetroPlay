@@ -1,0 +1,833 @@
+{
+  "schemaVersion": "1.0",
+  "site": {
+    "name": "RetroPlay",
+    "identity": "RetroPlay — Classic worlds, ready to play",
+    "type": "browser-game-hub",
+    "homepage": "https://mahankenway.github.io/RetroPlay/",
+    "repository": "https://github.com/MahanKenway/RetroPlay",
+    "creator": {
+      "name": "Mahan Tavakoli",
+      "handle": "MahanKenway",
+      "url": "https://github.com/MahanKenway"
+    },
+    "language": "en",
+    "catalog": "https://mahankenway.github.io/RetroPlay/data/games.json",
+    "sitemap": "https://mahankenway.github.io/RetroPlay/sitemap.xml",
+    "llms": "https://mahankenway.github.io/RetroPlay/llms.txt",
+    "privacy": "https://mahankenway.github.io/RetroPlay/privacy/",
+    "agentGuide": "https://mahankenway.github.io/RetroPlay/agent/",
+    "robotsPolicy": "all public content allowed"
+  },
+  "agentMode": "?agent=1",
+  "semanticLandmarks": [
+    "#featured",
+    "#catalog",
+    "#crawlable-catalog",
+    "#library",
+    "#about"
+  ],
+  "selectors": {
+    "catalog": "#catalog-grid",
+    "crawlableCatalog": "#crawlable-catalog",
+    "gameStatus": "#game-status",
+    "launchLinks": "a[data-agent-action=launch-game]",
+    "runtimeActions": "[data-agent-action]"
+  },
+  "agentActions": [
+    "launch",
+    "pause",
+    "resume",
+    "restart",
+    "fullscreen",
+    "return-to-hub",
+    "press-key"
+  ],
+  "runtimeStates": [
+    "loading",
+    "ready",
+    "playing",
+    "paused",
+    "error",
+    "stopped"
+  ],
+  "games": [
+    {
+      "id": "freedoom-phase-1",
+      "name": "Freedoom: Phase 1",
+      "url": null,
+      "playable": false,
+      "runtime": "Bundled IWAD",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "external-project-or-local-import",
+      "status": "Free / bundled",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "freedoom-phase-2",
+      "name": "Freedoom: Phase 2",
+      "url": null,
+      "playable": false,
+      "runtime": "Bundled IWAD",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "external-project-or-local-import",
+      "status": "Free / bundled",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "freedm",
+      "name": "FreeDM: Arena Archive",
+      "url": null,
+      "playable": false,
+      "runtime": "Bundled IWAD",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "external-project-or-local-import",
+      "status": "Free / bundled · solo exploration",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "hacx-1-2",
+      "name": "Hacx: Twitch ’n Kill",
+      "url": null,
+      "playable": false,
+      "runtime": "Bundled IWAD + PWAD",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "external-project-or-local-import",
+      "status": "Royalty-free / non-commercial bundle",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "blasphemer",
+      "name": "Blasphemer",
+      "url": "blasphemer.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "cdogs-sdl",
+      "name": "C-Dogs SDL",
+      "url": "cdogs.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "gnu-freedink",
+      "name": "GNU FreeDink",
+      "url": "freedink.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "opentyrian2000",
+      "name": "OpenTyrian2000",
+      "url": "opentyrian.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "librequake",
+      "name": "LibreQuake",
+      "url": "librequake.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "openttd",
+      "name": "OpenTTD",
+      "url": "openttd.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "freerct",
+      "name": "FreeRCT",
+      "url": "freerct.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "neverball",
+      "name": "Neverball",
+      "url": "neverball.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "armawebtron",
+      "name": "Armawebtron",
+      "url": "armawebtron.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "tuxracer-js",
+      "name": "TuxRacer.js",
+      "url": "tuxracer.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "starter-kit-racing",
+      "name": "Starter Kit Racing",
+      "url": "starter-kit-racing.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "astray",
+      "name": "Astray",
+      "url": "astray.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "neon-rift",
+      "name": "Neon Rift",
+      "url": "neon-rift.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "obsidian-relay",
+      "name": "Obsidian Relay",
+      "url": "shadow-station.html",
+      "playable": true,
+      "runtime": "Bundled OpenResident WebGL2/WASM runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "hexgl",
+      "name": "HexGL",
+      "url": "hexgl.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled · non-commercial package",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "hextris",
+      "name": "Hextris",
+      "url": "hextris.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "rocksndiamonds",
+      "name": "Rocks'n'Diamonds",
+      "url": "rocksndiamonds.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "beats-into-shapes",
+      "name": "Beats into Shapes",
+      "url": "beats-into-shapes.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "2048",
+      "name": "2048",
+      "url": "2048.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "javascript-tetris",
+      "name": "JavaScript Tetris",
+      "url": "javascript-tetris.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "adarkroom",
+      "name": "A Dark Room",
+      "url": "adarkroom.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "digger-remastered",
+      "name": "Digger Remastered",
+      "url": "digger.html",
+      "playable": true,
+      "runtime": "Bundled independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Free / bundled",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "ancient-aliens",
+      "name": "Ancient Aliens",
+      "url": "https://www.moddb.com/games/doom-ii/addons/ancient-aliens",
+      "playable": false,
+      "runtime": "Doom II PWAD · Boom",
+      "controls": [],
+      "launchMethod": "external-project-or-local-import",
+      "status": "External engine required",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "eviternity",
+      "name": "Eviternity",
+      "url": "https://www.moddb.com/mods/eviternity",
+      "playable": false,
+      "runtime": "Doom II PWAD · Boom",
+      "controls": [],
+      "launchMethod": "external-project-or-local-import",
+      "status": "External engine required",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "back-to-saturn-x-e1",
+      "name": "Back to Saturn X: E1",
+      "url": "https://www.moddb.com/mods/back-to-saturn-x",
+      "playable": false,
+      "runtime": "Doom II PWAD pair",
+      "controls": [],
+      "launchMethod": "external-project-or-local-import",
+      "status": "Download project WADs locally",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "adventures-of-square",
+      "name": "The Adventures of Square",
+      "url": "http://adventuresofsquare.com/",
+      "playable": false,
+      "runtime": "Standalone GZDoom total conversion",
+      "controls": [],
+      "launchMethod": "external-project-or-local-import",
+      "status": "External engine required",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "plutonia",
+      "name": "The Plutonia Experiment",
+      "url": null,
+      "playable": false,
+      "runtime": "Commercial IWAD",
+      "controls": [],
+      "launchMethod": "external-project-or-local-import",
+      "status": "Requires your legal IWAD",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "tnt-evilution",
+      "name": "TNT: Evilution",
+      "url": null,
+      "playable": false,
+      "runtime": "Commercial IWAD",
+      "controls": [],
+      "launchMethod": "external-project-or-local-import",
+      "status": "Requires your legal IWAD",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "community-slot",
+      "name": "Community WAD shelf",
+      "url": null,
+      "playable": false,
+      "runtime": "IWAD + PWAD",
+      "controls": [],
+      "launchMethod": "external-project-or-local-import",
+      "status": "Attach a compatible WAD",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "ecwolf",
+      "name": "ECWolf",
+      "url": "ecwolf.html",
+      "playable": true,
+      "runtime": "Local-data independent runtime",
+      "controls": [
+        "keyboard",
+        "touch",
+        "gamepad",
+        "fullscreen"
+      ],
+      "launchMethod": "direct-link",
+      "status": "Engine bundled / data local",
+      "actions": [
+        "launch",
+        "pause",
+        "resume",
+        "restart",
+        "fullscreen",
+        "return-to-hub",
+        "press-key"
+      ],
+      "agentStateSelector": "#game-status"
+    },
+    {
+      "id": "openresident-research",
+      "name": "OpenResident",
+      "url": "openresident.html",
+      "playable": false,
+      "runtime": "Resident Evil engine",
+      "controls": [],
+      "launchMethod": "technical-probe",
+      "status": "WebAssembly study · not playable",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    },
+    {
+      "id": "supertuxkart",
+      "name": "SuperTuxKart",
+      "url": "https://supertuxkart.net/Download",
+      "playable": false,
+      "runtime": "Full-game desktop download",
+      "controls": [],
+      "launchMethod": "external-project-or-local-import",
+      "status": "Free full game / download required",
+      "actions": [
+        "open-project"
+      ],
+      "agentStateSelector": null
+    }
+  ]
+}

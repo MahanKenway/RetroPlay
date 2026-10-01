@@ -42,6 +42,8 @@
     @media (max-width:760px) and (orientation:landscape) { .play-area:fullscreen canvas { max-height:calc(100vh - 172px); } }
     @media (min-width:761px) { .play-area:fullscreen .controls { display:none; } .play-area:fullscreen canvas { width:100vw; height:100vh; max-height:none; aspect-ratio:auto; } }
   </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "Blasphemer", "url": "https://mahankenway.github.io/RetroPlay/blasphemer.html", "description": "A complete free dark-fantasy shooter running through Chocolate Heretic in its own WebAssembly module. It bundles the Blasphemer IWAD, starts with no player upload or external game download, keeps configuration and saves in the browser, and provides fullscreen plus PSP-style touch controls.", "genre": "Fantasy shooter", "applicationCategory": "Game"}
+  </script>
 </head>
 <body>
   <main>
@@ -57,7 +59,7 @@
           <div class="control-cluster"><span class="control-label">Action / menu</span><div class="actions"><button class="pad-btn pad-btn--run" data-key="ShiftLeft" aria-label="Run">RUN</button><button class="pad-btn" data-key="Space" aria-label="Use">△</button><span></span><button class="pad-btn" data-key="AltLeft" aria-label="Strafe">□</button><button class="pad-btn" data-key="ControlLeft" aria-label="Fire">○</button><button class="pad-btn" data-key="Enter" aria-label="Select">×</button><button class="pad-btn pad-btn--menu" data-key="Escape" aria-label="Open menu or go back">MENU</button></div></div>
         </div>
       </div>
-      <div class="result"><span>Runtime status</span><output id="result" class="status">Preparing bundled Blasphemer…</output><dl class="facts"><div><dt>Runtime</dt><dd>Chocolate Heretic / WebAssembly</dd></div><div><dt>Content</dt><dd>Bundled Blasphemer 0.1.8 IWAD</dd></div><div><dt>Session</dt><dd>Browser-local configuration and saves</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad / mouse</dd></div><div><dt>First-load sound</dt><dd>Silent for mobile-safe startup</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
+      <div class="result"><span>Runtime status</span><output id="result" data-agent-status="true" class="status">Preparing bundled Blasphemer…</output><dl class="facts"><div><dt>Runtime</dt><dd>Chocolate Heretic / WebAssembly</dd></div><div><dt>Content</dt><dd>Bundled Blasphemer 0.1.8 IWAD</dd></div><div><dt>Session</dt><dd>Browser-local configuration and saves</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad / mouse</dd></div><div><dt>First-load sound</dt><dd>Silent for mobile-safe startup</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
     </section>
     <p class="notice"><strong>Fully bundled libre game:</strong> Chocolate Heretic and the Blasphemer game data are GPL-licensed free software. RetroPlay bundles the complete free IWAD and does not accept uploads, fetch external game content or include original Heretic data. The initial browser build starts silently to avoid mobile AudioContext stalls; gameplay, fullscreen, keyboard, mouse, gamepad and PSP touch controls remain available. <a href="blasphemer/CHOCOLATE-DOOM-COPYING.txt">Engine license</a> · <a href="blasphemer/BLASPHEMER-COPYING.txt">Game-data license</a> · <a href="blasphemer/BLASPHEMER-CREDITS.md">Credits</a> · <a href="blasphemer/SOURCE-NOTICE.txt">Source notice</a>.</p>
   </main>
@@ -139,5 +141,6 @@
     };
   </script>
   <script src="blasphemer/chocolate-heretic.js?v=20260817-blasphemer-retroplay-v1" onerror="setStatus('NOT READY\nThe Blasphemer engine file could not load.')"></script>
+<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

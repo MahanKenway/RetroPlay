@@ -42,6 +42,8 @@
   <meta property="og:url" content="https://mahankenway.github.io/RetroPlay/openttd.html" />
   <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/openttd-runtime.webp" />
   <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "OpenTTD", "url": "https://mahankenway.github.io/RetroPlay/openttd.html", "description": "A complete transport-strategy game in its own OpenTTD WebAssembly runtime. It bundles the free OpenGFX graphics, OpenSFX effects and OpenMSX music sets, keeps saves in the browser, includes PSP-style touch controls and never asks the player to upload Transport Tycoon Deluxe files.", "genre": "Strategy", "applicationCategory": "Game"}
+  </script>
 </head>
 <body>
   <main>
@@ -54,7 +56,7 @@
         <canvas id="canvas" width="1024" height="768" tabindex="0" aria-label="OpenTTD game canvas"></canvas>
         <span class="fullscreen-hint">Esc to leave fullscreen</span>
       </div>
-      <div class="result"><span>Runtime status</span><output id="result" class="status">Preparing complete OpenTTD runtime…</output><dl class="facts"><div><dt>Runtime</dt><dd>OpenTTD / WebGL / WebAssembly</dd></div><div><dt>Content</dt><dd>OpenGFX + OpenSFX + OpenMSX</dd></div><div><dt>Session</dt><dd>Local browser saves</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad*</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
+      <div class="result"><span>Runtime status</span><output id="result" data-agent-status="true" class="status">Preparing complete OpenTTD runtime…</output><dl class="facts"><div><dt>Runtime</dt><dd>OpenTTD / WebGL / WebAssembly</dd></div><div><dt>Content</dt><dd>OpenGFX + OpenSFX + OpenMSX</dd></div><div><dt>Session</dt><dd>Local browser saves</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad*</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
     </section>
     <section class="touch-controls" aria-label="PSP-style touch controls">
       <div class="dpad"><button class="pad-btn" data-key="ArrowUp" aria-label="Scroll map up">▲</button><button class="pad-btn" data-key="ArrowLeft" aria-label="Scroll map left">◀</button><button class="pad-btn" data-key="ArrowDown" aria-label="Scroll map down">▼</button><button class="pad-btn" data-key="ArrowRight" aria-label="Scroll map right">▶</button></div>
@@ -195,5 +197,6 @@
   </script>
   <script src="openttd/openttd-basesets.js?v=20260815-openttd-rift-runtime-v5"></script>
   <script src="openttd/openttd.js?v=20260815-openttd-rift-runtime-v5"></script>
+<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

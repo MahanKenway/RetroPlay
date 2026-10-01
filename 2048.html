@@ -12,6 +12,24 @@
   <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/2048-runtime.webp" />
   <title>RetroPlay — 2048</title>
   <link rel="stylesheet" href="styles/runtime-shell.css" />
+
+  <meta name="application-name" content="RetroPlay" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://mahankenway.github.io/RetroPlay/2048.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RetroPlay" />
+  <meta property="og:title" content="RetroPlay — 2048" />
+  <meta property="og:description" content="The original 2048 number puzzle bundled as a local HTML5 game. Slide tiles with keyboard, swipe, gamepad or PSP-style controls; its best score stays in the browser and no account, upload or " />
+  <meta property="og:url" content="https://mahankenway.github.io/RetroPlay/2048.html" />
+  <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/2048-runtime.webp" />
+  <meta property="og:image:alt" content="2048 gameplay screenshot" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RetroPlay — 2048" />
+  <meta name="twitter:description" content="The original 2048 number puzzle bundled as a local HTML5 game. Slide tiles with keyboard, swipe, gamepad or PSP-style controls; its best score stays in the browser and no account, upload or " />
+  <meta name="twitter:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/2048-runtime.webp" />
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "2048", "url": "https://mahankenway.github.io/RetroPlay/2048.html", "description": "The original 2048 number puzzle bundled as a local HTML5 game. Slide tiles with keyboard, swipe, gamepad or PSP-style controls; its best score stays in the browser and no account, upload or online score service is required.", "genre": "Arcade Puzzle", "applicationCategory": "Game"}
+  </script>
 </head>
 <body>
   <main class="runtime-main" data-retro-runtime data-runtime-title="2048">
@@ -27,10 +45,11 @@
           <div class="runtime-control-cluster"><span class="runtime-control-label">Session</span><div class="runtime-actions"><button class="runtime-pad runtime-pad--action" data-key="ArrowUp" data-gamepad-primary="ArrowUp" aria-label="Move up">▲</button><button class="runtime-pad" data-runtime-fullscreen aria-label="Toggle fullscreen">□</button><button class="runtime-pad" data-runtime-restart aria-label="Start a new board">↻</button><button class="runtime-pad runtime-pad--wide" data-runtime-restart aria-label="New game">NEW GAME</button></div></div>
         </div>
       </div>
-      <div class="runtime-result"><span class="runtime-kicker">Runtime status</span><output class="runtime-status">Starting 2048…</output><dl class="runtime-facts"><div><dt>Runtime</dt><dd>Original HTML5 / DOM</dd></div><div><dt>Content</dt><dd>Fully local puzzle logic and fonts</dd></div><div><dt>Session</dt><dd>Browser-local best score</dd></div><div><dt>Input</dt><dd>Keyboard / swipe / PSP touch / gamepad</dd></div><div><dt>Distribution</dt><dd>MIT package</dd></div></dl><button class="runtime-button" type="button" data-runtime-fullscreen>Fullscreen</button></div>
+      <div class="runtime-result"><span class="runtime-kicker">Runtime status</span><output class="runtime-status" data-agent-status="true">Starting 2048…</output><dl class="runtime-facts"><div><dt>Runtime</dt><dd>Original HTML5 / DOM</dd></div><div><dt>Content</dt><dd>Fully local puzzle logic and fonts</dd></div><div><dt>Session</dt><dd>Browser-local best score</dd></div><div><dt>Input</dt><dd>Keyboard / swipe / PSP touch / gamepad</dd></div><div><dt>Distribution</dt><dd>MIT package</dd></div></dl><button class="runtime-button" type="button" data-runtime-fullscreen>Fullscreen</button></div>
     </section>
     <p class="runtime-notice"><strong>Fully bundled classic puzzle:</strong> 2048 is packaged from the pinned upstream source with local scripts, fonts and mobile swipe input. The game keeps its score in this browser. <a href="2048/2048-MIT.txt">MIT license</a> · <a href="2048/SOURCE-NOTICE.txt">Source notice</a>.</p>
   </main>
   <script src="src/runtime-shell.js"></script>
+<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

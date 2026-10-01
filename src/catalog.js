@@ -1185,6 +1185,7 @@ export class CatalogController {
     const isRuntime = Boolean(game.runtimePath);
     const isProbe = !game.playable && Boolean(game.probePath);
     const isExternal = !game.playable && Boolean(game.projectUrl);
+    const agentUrl = game.runtimePath ?? game.probePath ?? game.projectUrl ?? null;
     const action = isRuntime ? 'open-runtime' : (game.playable ? 'play-game' : (isProbe ? 'open-probe' : (isExternal ? 'open-project' : 'import')));
     const actionLabel = isRuntime ? (game.runtimeLabel ?? 'Launch runtime') : (game.playable ? (game.playLabel ?? 'Play now') : (isProbe ? (game.projectLabel ?? 'Open technical probe') : (isExternal ? (game.projectLabel ?? 'View project') : 'Attach WAD')));
     const state = game.catalogState ?? (isRuntime ? 'INDEPENDENT RUNTIME' : (game.playable ? 'BUNDLED' : (isProbe ? 'WEBGL2 STUDY' : (isExternal ? 'EXTERNAL ENGINE' : 'OWNED FILE'))));
@@ -1201,7 +1202,7 @@ export class CatalogController {
         <h3>${game.title}</h3><p>${game.description}</p>
         <p class="card-license">${game.license}</p>
         <div class="card-meta"><span>${game.year}</span><span>${game.duration}</span><span>${game.maps}</span></div>
-        <div class="card-actions"><button class="retro-button retro-button-compact" data-magnet data-action="${action}" data-game="${game.id}">${actionLabel}</button><button class="card-detail-button" data-action="show-detail" data-game="${game.id}">Details ↗</button><button class="icon-button ${saved ? 'is-saved' : ''}" data-action="toggle-library" data-game="${game.id}" aria-label="${saved ? 'Remove from' : 'Add to'} Library" aria-pressed="${saved}">${saved ? '★' : '☆'}</button></div>${download}${downloadNote}
+        <div class="card-actions"><button class="retro-button retro-button-compact" data-magnet data-action="${action}" data-game="${game.id}">${actionLabel}</button><button class="card-detail-button" data-action="show-detail" data-game="${game.id}">Details ↗</button>${agentUrl ? `<a class="card-agent-link" data-agent-action="launch-game" data-game-id="${game.id}" href="${agentUrl}"${isExternal ? ' target="_blank" rel="noopener noreferrer"' : ''}>Open direct route</a>` : ''}<button class="icon-button ${saved ? 'is-saved' : ''}" data-action="toggle-library" data-game="${game.id}" aria-label="${saved ? 'Remove from' : 'Add to'} Library" aria-pressed="${saved}">${saved ? '★' : '☆'}</button></div>${download}${downloadNote}
       </div>
     </article>`;
   }

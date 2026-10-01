@@ -402,3 +402,20 @@ body.detail-open { overflow:hidden; }.game-detail-dialog { width:min(1040px,calc
 @media (prefers-reduced-motion:reduce) { .audio-toggle.is-audio-active .audio-toggle-icon,.game-detail-dialog[open] { animation:none; } }
 
 .retro-footer-link { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+/* Semantic crawler and browser-agent discovery layer */
+.sr-only { position:absolute !important; width:1px !important; height:1px !important; padding:0 !important; margin:-1px !important; overflow:hidden !important; clip:rect(0,0,0,0) !important; white-space:nowrap !important; border:0 !important; }
+.crawlable-catalog { margin: 26px 0 34px; padding: 26px; }
+.crawlable-catalog-heading { display:grid; grid-template-columns:minmax(170px,.7fr) minmax(0,1.3fr); gap:26px; align-items:start; }
+.crawlable-catalog-heading h2 { margin:0; font-size:clamp(28px,4vw,52px); line-height:.95; letter-spacing:-.06em; font-weight:500; }
+.crawlable-catalog-heading p:not(.section-tag) { max-width:620px; margin:12px 0 0; color:var(--ink-muted); }
+.crawlable-game-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; margin:24px 0 0; padding:0; list-style:none; background:var(--line); }
+.crawlable-game-list li { min-width:0; padding:17px; background:var(--glass); }
+.crawlable-game-list a { color:var(--ink); font-size:16px; font-weight:650; text-decoration:underline; text-decoration-color:var(--lime); text-underline-offset:3px; }
+.crawlable-game-list span { display:block; margin-top:5px; color:var(--ink-muted); font:9px var(--font-mono); letter-spacing:.06em; text-transform:uppercase; }
+.crawlable-game-list p { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; overflow:hidden; margin:10px 0 0; color:var(--ink-muted); font-size:12px; line-height:1.5; }
+.crawlable-game-list a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline:3px solid var(--lime); outline-offset:4px; }
+.card-agent-link { align-self:center; color:var(--ink-muted); font:9px var(--font-mono); letter-spacing:.04em; text-decoration:underline; text-underline-offset:3px; white-space:nowrap; }
+.card-agent-link:hover { color:var(--ink); }
+@media (max-width:900px) { .crawlable-game-list { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:650px) { .crawlable-catalog { padding:20px 15px; } .crawlable-catalog-heading { grid-template-columns:1fr; gap:10px; } .crawlable-game-list { grid-template-columns:1fr; } }
