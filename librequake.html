@@ -31,8 +31,6 @@
   <meta property="og:url" content="https://mahankenway.github.io/RetroPlay/librequake.html" />
   <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/librequake-runtime.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "LibreQuake", "url": "https://mahankenway.github.io/RetroPlay/librequake.html", "description": "A first-person action campaign using the classic Quake engine in its own Qwasm WebAssembly module. It bundles independent LibreQuake Lite data, keeps saves in the browser and has PSP-style touch controls without using original Quake assets or sharing Doom’s WAD loader and game loop.", "genre": "Action", "applicationCategory": "Game"}
-  </script>
 </head>
 <body>
   <main>
@@ -42,7 +40,7 @@
     <p class="intro">A fully free first-person campaign built on the classic Quake engine. LibreQuake’s open game data runs in its own Qwasm WebAssembly module, with browser-local saves and no shared loader, game loop or content from Doom.</p>
     <section class="panel" aria-label="LibreQuake runtime">
       <div class="screen"><canvas id="canvas" width="640" height="480" tabindex="0" aria-label="LibreQuake game canvas"></canvas></div>
-      <div class="result"><span>Runtime status</span><output id="result" data-agent-status="true" class="status">Preparing LibreQuake…</output><dl class="facts"><div><dt>Runtime</dt><dd>Quake engine / WebAssembly</dd></div><div><dt>Content</dt><dd>LibreQuake Lite free data</dd></div><div><dt>Session</dt><dd>Browser IndexedDB saves</dd></div><div><dt>Input</dt><dd>Keyboard / touch / mouse-look</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
+      <div class="result"><span>Runtime status</span><output id="result" class="status">Preparing LibreQuake…</output><dl class="facts"><div><dt>Runtime</dt><dd>Quake engine / WebAssembly</dd></div><div><dt>Content</dt><dd>LibreQuake Lite free data</dd></div><div><dt>Session</dt><dd>Browser IndexedDB saves</dd></div><div><dt>Input</dt><dd>Keyboard / touch / mouse-look</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
     </section>
     <div class="controls" aria-label="Touch controls">
       <div class="dpad"><button class="pad-btn" data-key="ArrowUp">▲</button><button class="pad-btn" data-key="ArrowLeft">◀</button><button class="pad-btn" data-key="ArrowDown">▼</button><button class="pad-btn" data-key="ArrowRight">▶</button></div>
@@ -86,6 +84,5 @@
     };
   </script>
   <script src="librequake/index.js?v=20260815-liberquake-rift-runtime-v1"></script>
-<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

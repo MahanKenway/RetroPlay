@@ -208,9 +208,3 @@ For the historical legal and technical decision not to package OpenRCT2 or propr
 Built and maintained by [MahanKenway](https://github.com/MahanKenway). RetroPlay is a preservation-minded, non-commercial experiment in making free classic game worlds easier to explore.
 
 </div>
-
-## Machine-readable discovery and browser agents
-
-RetroPlay keeps its canonical catalog in [`data/games.json`](data/games.json), generated from the runtime catalog used by the interactive hub. The static [`agent/`](agent/) area and [`agent-manifest.json`](agent-manifest.json) expose every public game, direct runtime URL, playability state, controls, status vocabulary and safe browser-agent actions without requiring JavaScript, cookies, login or an API key. Runtime pages load [`src/agent-runtime.js`](src/agent-runtime.js), which exposes `window.RetroPlayAgent` for legitimate actions such as `launchGame`, `pause`, `resume`, `restart`, `fullscreen`, `returnToHub`, `pressKey` and `getState`.
-
-The homepage also includes a semantic HTML catalog before JavaScript enhancement, while the visual catalog continues to provide search, genre filters, featured rotation, local library and the existing PSP-style interface. OpenResident remains explicitly marked as a non-playable technical study and is excluded from the sitemap with `noindex,follow`.

@@ -2,170 +2,106 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/privacy/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mahankenway.github.io/RetroPlay/agent/</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mahankenway.github.io/RetroPlay/agent-manifest.json</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mahankenway.github.io/RetroPlay/data/games.json</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://mahankenway.github.io/RetroPlay/blasphemer.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/cdogs.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/freedink.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/opentyrian.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/librequake.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/openttd.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/freerct.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/neverball.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mahankenway.github.io/RetroPlay/armawebtron.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-15</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/tuxracer.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mahankenway.github.io/RetroPlay/armawebtron.html</loc>
+    <lastmod>2026-08-20</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/starter-kit-racing.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-21</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/astray.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-20</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/neon-rift.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-18</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/shadow-station.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-19</lastmod>
+  </url>
+  <url>
+    <loc>https://mahankenway.github.io/RetroPlay/blasphemer.html</loc>
+    <lastmod>2026-08-17</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/hexgl.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-17</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/hextris.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-18</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/rocksndiamonds.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-18</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/beats-into-shapes.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-18</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/2048.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-18</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/javascript-tetris.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-18</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/adarkroom.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-18</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/digger.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-18</lastmod>
   </url>
   <url>
     <loc>https://mahankenway.github.io/RetroPlay/ecwolf.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-08-15</lastmod>
   </url>
 </urlset>

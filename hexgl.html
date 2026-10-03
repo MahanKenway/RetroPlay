@@ -37,8 +37,6 @@
     @media (max-width:760px) and (orientation:landscape) { .play-area:fullscreen .game-frame { max-height:calc(100vh - 168px); } }
     @media (min-width:761px) { .play-area:fullscreen .controls { display:none; } .play-area:fullscreen .game-frame { width:100vw; height:100vh; max-height:none; aspect-ratio:auto; } }
   </style>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "HexGL", "url": "https://mahankenway.github.io/RetroPlay/hexgl.html", "description": "A fast, futuristic 3D WebGL racer in its own fully local runtime. It bundles the Cityscape course, ship, texture, geometry and audio assets, launches straight into a race without uploads or external game data, and includes fullscreen, gamepad and PSP-style touch controls.", "genre": "Racing", "applicationCategory": "Game"}
-  </script>
 </head>
 <body>
   <main>
@@ -55,7 +53,7 @@
           <div class="control-cluster"><span class="control-label">Air-brake / session</span><div class="actions"><button class="pad-btn" data-key="KeyA" aria-label="Left air-brake">△</button><button class="pad-btn" data-key="ArrowUp" aria-label="Accelerate">×</button><button class="pad-btn" data-key="KeyD" aria-label="Right air-brake">○</button><button id="btn-restart" class="pad-btn pad-btn--restart" aria-label="Restart race">↻</button><button id="btn-fullscreen-touch" class="pad-btn" aria-label="Toggle fullscreen">□</button><button id="btn-menu" class="pad-btn pad-btn--menu" aria-label="Return to HexGL menu">MENU</button></div></div>
         </div>
       </div>
-      <div class="result"><span>Runtime status</span><output id="result" data-agent-status="true" class="status">Loading bundled HexGL runtime…</output><dl class="facts"><div><dt>Runtime</dt><dd>Native WebGL / JavaScript</dd></div><div><dt>Content</dt><dd>Bundled Cityscape race + audio</dd></div><div><dt>Session</dt><dd>Browser-local settings</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad</dd></div><div><dt>Distribution</dt><dd>Non-commercial RetroPlay package</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
+      <div class="result"><span>Runtime status</span><output id="result" class="status">Loading bundled HexGL runtime…</output><dl class="facts"><div><dt>Runtime</dt><dd>Native WebGL / JavaScript</dd></div><div><dt>Content</dt><dd>Bundled Cityscape race + audio</dd></div><div><dt>Session</dt><dd>Browser-local settings</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad</dd></div><div><dt>Distribution</dt><dd>Non-commercial RetroPlay package</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
     </section>
     <p class="notice"><strong>Fully bundled 3D game:</strong> HexGL ships from a pinned upstream source revision with all required tracks, models, textures, scripts and audio inside RetroPlay. The copied runtime removes legacy analytics and remote icon requests; it does not fetch playable content from another site. Root code is MIT-licensed, while individual upstream files retain their own notices, including the non-commercial ShipControls file and the sound attributions. <a href="hexgl/HEXGL-MIT-LICENSE.txt">MIT license</a> · <a href="hexgl/HEXGL-AUDIO-LICENSE.txt">Audio attributions</a> · <a href="hexgl/SOURCE-NOTICE.txt">Source notice</a>.</p>
   </main>
@@ -116,6 +114,5 @@
     window.addEventListener('gamepadconnected', () => focusGame()); window.addEventListener('pagehide', releaseAll); document.addEventListener('visibilitychange', () => { if (document.hidden) releaseAll(); });
     updateGamepad();
   </script>
-<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

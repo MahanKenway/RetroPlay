@@ -21,26 +21,8 @@
     .source { display:inline-block; margin-top:14px; color:var(--ink); font:10px var(--mono); letter-spacing:.07em; text-transform:uppercase; }
     @media (max-width:720px) { main { width:min(100% - 28px,620px); }.panel { grid-template-columns:1fr; }.result { padding:2px; } }
   </style>
-  <meta name="robots" content="noindex,follow" />
+  <meta name="robots" content="noindex,nofollow" />
   <link rel="canonical" href="https://mahankenway.github.io/RetroPlay/openresident.html" />
-
-  <meta name="application-name" content="RetroPlay" />
-  <meta name="robots" content="index,follow,max-image-preview:large" />
-  <link rel="canonical" href="https://mahankenway.github.io/RetroPlay/openresident.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="RetroPlay" />
-  <meta property="og:title" content="RetroPlay — OpenResident" />
-  <meta property="og:description" content="An open C engine studied for a future browser port. The upstream source has no Resident Evil game data and currently targets X11/GLX or Win32/WGL, so RetroPlay does not package, emulate or l" />
-  <meta property="og:url" content="https://mahankenway.github.io/RetroPlay/openresident.html" />
-  <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/openresident-gameplay.webp" />
-  <meta property="og:image:alt" content="OpenResident gameplay screenshot" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="RetroPlay — OpenResident" />
-  <meta name="twitter:description" content="An open C engine studied for a future browser port. The upstream source has no Resident Evil game data and currently targets X11/GLX or Win32/WGL, so RetroPlay does not package, emulate or l" />
-  <meta name="twitter:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/openresident-gameplay.webp" />
-
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "OpenResident", "url": "https://mahankenway.github.io/RetroPlay/openresident.html", "description": "An open C engine studied for a future browser port. The upstream source has no Resident Evil game data and currently targets X11/GLX or Win32/WGL, so RetroPlay does not package, emulate or launch it as a game.", "genre": "Horror", "applicationCategory": "Game"}
-  </script>
 </head>
 <body>
   <main>
@@ -50,7 +32,7 @@
     <p class="intro">This page validates a minimal <strong>WebAssembly + WebGL2</strong> rendering bridge for the BSD-2-Clause OpenResident engine. It is a technical probe, not a playable Resident Evil build.</p>
     <section class="panel" aria-label="OpenResident WebGL2 probe">
       <canvas id="canvas" width="960" height="720" aria-label="OpenResident WebGL2 technical probe canvas"></canvas>
-      <div class="result"><span>Renderer status</span><output id="result" data-agent-status="true" class="status">Loading WebAssembly probe…</output><dl class="facts"><div><dt>Runtime</dt><dd>WebAssembly / WebGL2</dd></div><div><dt>Scope</dt><dd>Renderer lifecycle only</dd></div><div><dt>Game data</dt><dd>None bundled or mounted</dd></div><div><dt>License</dt><dd>BSD 2-Clause engine code</dd></div></dl><a class="source" href="https://github.com/XProger/OpenResident" target="_blank" rel="noopener noreferrer">View upstream source ↗</a></div>
+      <div class="result"><span>Renderer status</span><output id="result" class="status">Loading WebAssembly probe…</output><dl class="facts"><div><dt>Runtime</dt><dd>WebAssembly / WebGL2</dd></div><div><dt>Scope</dt><dd>Renderer lifecycle only</dd></div><div><dt>Game data</dt><dd>None bundled or mounted</dd></div><div><dt>License</dt><dd>BSD 2-Clause engine code</dd></div></dl><a class="source" href="https://github.com/XProger/OpenResident" target="_blank" rel="noopener noreferrer">View upstream source ↗</a></div>
     </section>
     <p class="notice"><strong>Why this is not playable:</strong> the upstream repository contains engine code but no Resident Evil game data, and a production browser port still needs a complete platform layer for files, input, audio, lifecycle and end-to-end compatibility testing. RetroPlay does not distribute, mount or request copyrighted game data through this page.</p>
   </main>
@@ -67,6 +49,5 @@
       result.textContent = `NOT READY\n${error.message}`;
     }
   </script>
-<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

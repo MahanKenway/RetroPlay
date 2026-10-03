@@ -37,8 +37,6 @@
   <meta property="og:url" content="https://mahankenway.github.io/RetroPlay/opentyrian.html" />
   <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/opentyrian-runtime.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "OpenTyrian2000", "url": "https://mahankenway.github.io/RetroPlay/opentyrian.html", "description": "An arcade vertical shooter running in its own OpenTyrian2000 WebAssembly module. It bundles the project-documented freeware Tyrian 2000 data, persists saves inside the browser and provides PSP-style touch controls without sharing Doom’s WAD loader or game loop.", "genre": "Action", "applicationCategory": "Game"}
-  </script>
 </head>
 <body>
   <main>
@@ -48,7 +46,7 @@
     <p class="intro">A complete arcade shoot-’em-up in its own WebAssembly runtime. Pilot through Tyrian 2000’s freeware campaign with browser-local saves; this engine does not share Doom’s WAD loader, game loop or data files.</p>
     <section class="panel" aria-label="OpenTyrian2000 runtime">
       <div class="screen"><canvas id="canvas" width="320" height="200" tabindex="0" aria-label="OpenTyrian2000 game canvas"></canvas></div>
-      <div class="result"><span>Runtime status</span><output id="result" data-agent-status="true" class="status">Preparing OpenTyrian2000…</output><dl class="facts"><div><dt>Runtime</dt><dd>SDL2 / WebAssembly</dd></div><div><dt>Content</dt><dd>Tyrian 2000 freeware data</dd></div><div><dt>Session</dt><dd>Browser IndexedDB saves</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad*</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
+      <div class="result"><span>Runtime status</span><output id="result" class="status">Preparing OpenTyrian2000…</output><dl class="facts"><div><dt>Runtime</dt><dd>SDL2 / WebAssembly</dd></div><div><dt>Content</dt><dd>Tyrian 2000 freeware data</dd></div><div><dt>Session</dt><dd>Browser IndexedDB saves</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad*</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
     </section>
     <div class="controls" aria-label="Touch controls">
       <div class="dpad"><button class="pad-btn" data-key="ArrowUp">▲</button><button class="pad-btn" data-key="ArrowLeft">◀</button><button class="pad-btn" data-key="ArrowDown">▼</button><button class="pad-btn" data-key="ArrowRight">▶</button></div>
@@ -99,6 +97,5 @@
     };
   </script>
   <script src="opentyrian/opentyrian.js?v=20260814-opentyrian-rift-runtime-v1"></script>
-<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>

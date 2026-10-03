@@ -37,8 +37,6 @@
   <meta property="og:url" content="https://mahankenway.github.io/RetroPlay/freedink.html" />
   <meta property="og:image" content="https://mahankenway.github.io/RetroPlay/assets/screenshots/freedink-runtime.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "GNU FreeDink", "url": "https://mahankenway.github.io/RetroPlay/freedink.html", "description": "A complete libre 2D action-adventure running in its own GNU FreeDink WebAssembly module. It includes official FreeDink game data, keeps saves inside the browser and has PSP-style touch controls without sharing Doom’s WAD loader or game loop.", "genre": "Exploration", "applicationCategory": "Game"}
-  </script>
 </head>
 <body>
   <main>
@@ -48,7 +46,7 @@
     <p class="intro">A complete libre 2D action-adventure in its own WebAssembly runtime. Explore Dink Smallwood’s world with browser-local saves; this engine has no connection to Doom’s WAD loader, game loop or data files.</p>
     <section class="panel" aria-label="GNU FreeDink runtime">
       <div class="screen"><canvas id="canvas" width="960" height="720" tabindex="0" aria-label="GNU FreeDink game canvas"></canvas></div>
-      <div class="result"><span>Runtime status</span><output id="result" data-agent-status="true" class="status">Preparing GNU FreeDink…</output><dl class="facts"><div><dt>Runtime</dt><dd>SDL2 / WebGL2 / WebAssembly</dd></div><div><dt>Content</dt><dd>Official FreeDink game data</dd></div><div><dt>Session</dt><dd>Local browser storage</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad*</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
+      <div class="result"><span>Runtime status</span><output id="result" class="status">Preparing GNU FreeDink…</output><dl class="facts"><div><dt>Runtime</dt><dd>SDL2 / WebGL2 / WebAssembly</dd></div><div><dt>Content</dt><dd>Official FreeDink game data</dd></div><div><dt>Session</dt><dd>Local browser storage</dd></div><div><dt>Input</dt><dd>Keyboard / touch / gamepad*</dd></div></dl><button id="btn-fullscreen" class="utility" type="button">Fullscreen</button></div>
     </section>
     <div class="controls" aria-label="Touch controls">
       <div class="dpad"><button class="pad-btn" data-key="ArrowUp">▲</button><button class="pad-btn" data-key="ArrowLeft">◀</button><button class="pad-btn" data-key="ArrowDown">▼</button><button class="pad-btn" data-key="ArrowRight">▶</button></div>
@@ -97,6 +95,5 @@
   </script>
   <script src="freedink/freedink.data.js?v=20260814-freedink-rift-runtime-v1"></script>
   <script src="freedink/freedink.js?v=20260814-freedink-rift-runtime-v1"></script>
-<script type="module" src="src/agent-runtime.js?v=retroplay-20260930-r1"></script>
 </body>
 </html>
